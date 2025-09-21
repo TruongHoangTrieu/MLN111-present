@@ -1,0 +1,120 @@
+/* ModernSection.css */
+
+/* layout chính */
+.modern-section {
+  padding: 100px 0;
+  background: #fff;
+}
+
+/* container giới hạn 1140px và dùng flex để căn trái - phải */
+.modern-section .container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+/* phần ảnh (bên trái) */
+.modern-image {
+  flex: 0 0 auto;
+}
+
+.modern-image img {
+  width: 500px; /* kích thước mặc định trên desktop */
+  max-width: 100%; /* responsive */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* phần text (bên phải) */
+.modern-text {
+  flex: 1 1 auto;
+}
+
+/* typography */
+.section-subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #767676;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: clamp(20px, 4vw, 40px); /* responsive */
+  font-weight: 700;
+  color: #111;
+  margin: 6px 0 20px;
+  line-height: 1.12;
+}
+
+.section-desc {
+  font-size: 25px;
+  color: #5a5a5a;
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+/* nút */
+.btn-dark {
+  background: #0f1720;
+  color: #fff;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 6px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.btn-dark:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(15, 23, 32, 0.18);
+}
+
+/* ===== fade-in animations (IntersectionObserver sẽ add class fade-in-visible) ===== */
+.fade-in-left,
+.fade-in-right {
+  opacity: 0;
+  will-change: transform, opacity;
+  transition: opacity 900ms cubic-bezier(0.22, 0.98, 0.35, 1),
+    transform 900ms cubic-bezier(0.22, 0.98, 0.35, 1);
+}
+
+.fade-in-left {
+  transform: translateX(-40px);
+}
+
+.fade-in-right {
+  transform: translateX(40px);
+}
+
+.fade-in-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* responsive: stack dọc trên mobile */
+@media (max-width: 991.98px) {
+  .modern-section .container {
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 20px;
+  }
+
+  .modern-image img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .modern-text {
+    text-align: center; /* nếu muốn, trên mobile căn giữa text */
+  }
+
+  .section-desc {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}

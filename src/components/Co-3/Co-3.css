@@ -1,0 +1,16 @@
+.recent-project-img {
+  object-fit: cover;
+  width: 100%;
+  height: auto; /* hoặc đặt 250px cho ảnh nhỏ nếu muốn đồng đều */
+  border-radius: 8px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  display: block;
+}
+
+.recent-project-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 2;
+}

@@ -1,0 +1,58 @@
+.role-section {
+  background: #f9fafc; /* nền sáng nhẹ nhàng */
+}
+
+.main-title {
+  font-size: 2rem; /* to hơn */
+  color: #222;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 8px;
+}
+
+.role-card {
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff;
+  min-height: 230px;
+  padding: 12px;
+}
+
+.role-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.role-title {
+  font-size: 1.3rem; /* chữ tiêu đề to hơn */
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.role-text {
+  font-size: 1.28rem; /* chữ nội dung to hơn chút */
+  line-height: 1.6;
+  color: #444;
+}
+
+/* viền trên có màu */
+.border-top-red {
+  border-top: 5px solid #d32f2f;
+}
+
+.border-top-gold {
+  border-top: 5px solid #fbc02d;
+}
+
+.border-top-green {
+  border-top: 5px solid #388e3c;
+}
+
+.border-top-blue {
+  border-top: 5px solid #1976d2;
+}

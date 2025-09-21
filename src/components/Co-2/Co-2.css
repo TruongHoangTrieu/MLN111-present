@@ -1,0 +1,58 @@
+.services-section {
+  background: #0C0E17;
+  height: 80vh;
+  display: flex;
+  align-items: center;   /* căn giữa theo trục dọc */
+  justify-content: center; /* nếu muốn giữa luôn theo ngang */
+  padding: 0 0; /* bỏ padding-top/bottom lớn */
+}
+
+
+.service-card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.5);
+}
+
+.service-img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  top: 40%;
+  border-radius: 50%;
+  
+}
+
+/* đẩy nút control ra ngoài vùng slide */
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto; /* bỏ mặc định chiếm 15% */
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+}
+
+.carousel-control-prev {
+  left: -60px; /* đẩy nút ra ngoài bên trái */
+}
+
+.carousel-control-next {
+  right: -60px; /* đẩy nút ra ngoài bên phải */
+}
+
+/* làm nút control thành vòng tròn */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 60% 60%;
+  background-color: rgba(0, 0, 0, 0.6); /* nền mờ */
+  border-radius: 50%;
+  padding: 20px;
+}

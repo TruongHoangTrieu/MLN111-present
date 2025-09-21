@@ -1,0 +1,16 @@
+.footer {
+  background-color: #0C0E17; /* màu nâu giống hình */
+  font-size: 20 px;
+  line-height: 1.4;
+
+  /* Animation mặc định */
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-in-out;
+}
+
+/* Khi xuất hiện */
+.footer.show {
+  opacity: 1;
+  transform: translateY(0);
+}

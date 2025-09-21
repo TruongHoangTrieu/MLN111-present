@@ -1,0 +1,105 @@
+/* Animation */
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.slide-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideInUp 0.8s ease forwards;
+}
+
+/* Related articles */
+.related-articles h3 {
+  font-size: 1.4rem;
+  color: #0d6efd; /* màu tiêu đề (có thể đổi) */
+}
+
+/* card hover */
+.hover-card {
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.hover-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(13, 110, 253, 0.12);
+}
+
+.related-articles.light-bg {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+/* Giữ màu chữ tối để dễ đọc */
+.related-articles.light-bg h3,
+.related-articles.light-bg p,
+.related-articles.light-bg a {
+  color: #111;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Box Style */
+.colored-box {
+  border-top: 8px solid transparent;
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.colored-box:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+/* Color Line */
+.red {
+  border-top-color: #e63946;
+}
+.green {
+  border-top-color: #2a9d8f;
+}
+.yellow {
+  border-top-color: #f4a261;
+}
+.purple {
+  border-top-color: #9d4edd;
+}
+
+/* Text Styling */
+.concept-box h4,
+.example-box h4 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.concept-box p,
+.example-box p {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Example image effect */
+.example-img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.example-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
+}

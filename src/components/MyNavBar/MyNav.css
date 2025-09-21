@@ -1,0 +1,46 @@
+/* chuyển màu mượt */
+.navbar {
+  transition: background-color 300ms ease, color 300ms ease, box-shadow 300ms ease;
+}
+
+/* mặc định: trong suốt, chữ trắng */
+.transparent-navbar {
+  background: transparent !important;
+}
+.transparent-navbar .navbar-brand,
+.transparent-navbar .nav-link,
+.transparent-navbar .brand-text {
+  color: #fff !important;
+}
+
+/* invert icon toggler để nhìn rõ khi nền tối */
+.transparent-navbar .navbar-toggler-icon {
+  filter: invert(1) brightness(2);
+}
+
+/* khi đã scroll qua hero -> nền trắng mờ */
+.scrolled-navbar {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+.scrolled-navbar .navbar-brand,
+.scrolled-navbar .nav-link,
+.scrolled-navbar .brand-text {
+  color: #fff !important;
+}
+
+/* toggler icon back to normal on light bg */
+.scrolled-navbar .navbar-toggler-icon {
+  filter: none;
+}
+
+/* đảm bảo dropdown menu nhìn tốt (nếu cần) */
+.scrolled-navbar .dropdown-menu {
+  background: rgba(255,255,255,0.95);
+}
+
+/* optional: tweak nav-link hover */
+.nav-link {
+  transition: color 160ms ease;
+}
