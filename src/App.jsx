@@ -5,6 +5,9 @@ import HomePage from "./pages/HomePage";
 import DetailPage from "./pages/DetailPage/DetailPage";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import ServicePage from "./pages/ServicePage/ServiceDetailPage";
+import ServiceDetailPage from "./pages/ServicePage/ServiceDetailPage";
+
 
 
 function App() {
@@ -16,6 +19,7 @@ function App() {
          <Routes>
           <Route path="/" element={<HomePage />} />
            <Route path="/detaild/:id" element={<DetailPage />} />
+           <Route path="/services/:id" element={<ServiceDetailPage />} />
          </Routes>
         <Footer />
       </BrowserRouter>

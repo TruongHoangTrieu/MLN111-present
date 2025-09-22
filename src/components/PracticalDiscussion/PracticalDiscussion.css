@@ -1,0 +1,16 @@
+/* PracticalDiscussion.css */
+.practical-discussion {
+  background: #fefefe;
+  border-radius: 12px;
+}
+
+.analysis-point {
+  background: #f9f9f9;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.analysis-point:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}

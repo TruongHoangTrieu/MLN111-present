@@ -2,17 +2,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function RelatedArticles({ currentId, articles, limit = 2, random = false }) {
+export default function RelatedArticles({
+  currentId,
+  articles,
+  limit = 2,
+  random = false,
+}) {
   const others = articles.filter((a) => a.id !== currentId);
 
   const shuffle = (arr) => arr.slice().sort(() => Math.random() - 0.5);
-  const related = random ? shuffle(others).slice(0, limit) : others.slice(0, limit);
+  const related = random
+    ? shuffle(others).slice(0, limit)
+    : others.slice(0, limit);
 
   if (related.length === 0) return null; // không hiển thị nếu không có bài liên quan
 
   return (
     <div className="related-articles mt-5 light-bg">
-      <h3 className="fw-bold mb-4 text-center">Bài viết liên quan</h3>
+      <h3 className="fw-bold mb-4 text-center">Quy luật tiếp theo</h3>
       <div className="row">
         {related.map((item) => (
           <div key={item.id} className="col-md-6 mb-4">
@@ -31,7 +38,10 @@ export default function RelatedArticles({ currentId, articles, limit = 2, random
                     <p className="card-text text-muted small mb-2">
                       {(item.concept || "").slice(0, 90)}...
                     </p>
-                    <Link to={`/detaild/${item.id}`} className="btn btn-sm btn-outline-primary mt-auto align-self-start">
+                    <Link
+                      to={`/detaild/${item.id}`}
+                      className="btn btn-sm btn-outline-primary mt-auto align-self-start"
+                    >
                       Xem chi tiết →
                     </Link>
                   </div>

@@ -44,24 +44,7 @@ function MyNav() {
 
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-5 fs-5">
-            <li className="nav-item">
-              <Link className="nav-link" to="/">Home</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="#about">About</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="#blog">Blog</Link>
-            </li>
-            <li className="nav-item dropdown">
-              <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
-                All Pages
-              </Link>
-              <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="#">Page 1</a></li>
-                <li><a className="dropdown-item" href="#">Page 2</a></li>
-              </ul>
-            </li>
+            
           </ul>
         </div>
       </div>
