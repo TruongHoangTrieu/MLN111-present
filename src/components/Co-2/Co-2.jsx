@@ -8,20 +8,20 @@ import "./Co-2.css";
 const services = [
   {
     id: 1,
-    title: "Quy luật thống nhất và đấu tranh của các mặt đối lập",
-    icon: <FaBalanceScale size={40} />,
+    title: "Quy luật những thay đổi về lượng dẫn đến thay đổi về chất",
+    icon: <FaChartLine size={40} />,
     path: "/services/1",
   },
   {
     id: 2,
-    title: "Quy luật phủ định của phủ định",
-    icon: <FaRecycle size={40} />,
+    title: "Quy luật thống nhất và đấu tranh của các mặt đối lập",
+    icon: <FaBalanceScale size={40} />,
     path: "/services/2",
   },
   {
     id: 3,
-    title: "Quy luật những thay đổi về lượng dẫn đến thay đổi về chất",
-    icon: <FaChartLine size={40} />,
+    title: "Quy luật phủ định của phủ định",
+    icon: <FaRecycle size={40} />,
     path: "/services/3",
   },
 ];
