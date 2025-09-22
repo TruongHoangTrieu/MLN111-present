@@ -2,8 +2,6 @@ export const services = [
   {
     id: 1,
     title: "Quy luật chuyển hóa từ lượng thành chất và ngược lại",
-    image: "https://i.ibb.co/7kC5wJt/quantity-quality.jpg",
-    imageCaption: "Hình 1. Minh họa mối quan hệ giữa lượng và chất",
     intro: "Sự thay đổi về lượng (tích lũy dần) đến một mức độ nhất định sẽ làm thay đổi về chất (bước nhảy).",
     introExample: "Ví dụ: Rèn luyện kỹ năng hằng ngày → đến một ngưỡng nào đó sẽ “lột xác” về năng lực.",
     sections: [
@@ -40,8 +38,6 @@ export const services = [
   {
     id: 2,
     title: "Quy luật thống nhất và đấu tranh của các mặt đối lập",
-    image: "https://i.ibb.co/example2.jpg", // bạn thay bằng link minh họa nếu cần
-    imageCaption: "",
     intro: "Mâu thuẫn là nguồn gốc của sự phát triển.",
     introExample: "Ví dụ: trong học tập, mâu thuẫn giữa 'cái đã biết' và 'cái chưa biết' thúc đẩy con người học hỏi thêm.",
     sections: [
@@ -79,8 +75,6 @@ export const services = [
   {
     id: 3,
     title: "Quy luật phủ định của phủ định",
-    image: "https://i.ibb.co/example3.jpg", // bạn thay bằng link minh họa nếu cần
-    imageCaption: "",
     intro: "Phát triển diễn ra theo hình thức “xoáy ốc”, cái mới ra đời phủ định cái cũ, nhưng vẫn kế thừa yếu tố tích cực.",
     introExample: "Ví dụ: sự phát triển của công nghệ (máy ảnh phim → máy ảnh kỹ thuật số → camera điện thoại).",
     sections: [

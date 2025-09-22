@@ -19,18 +19,7 @@ function ServiceDetailPage() {
         {service.title}
       </h2>
 
-      {/* Ảnh minh họa */}
-      <div className="text-center mb-4">
-        <img
-          src={service.image}
-          alt={service.title}
-          className="img-fluid rounded shadow"
-          style={{ maxHeight: "350px", objectFit: "cover" }}
-        />
-        <p className="text-muted mt-2" style={{ fontSize: "1rem", lineHeight: "1.5" }}>
-          {service.imageCaption}
-        </p>
-      </div>
+      
 
       {/* Mở đầu */}
       <Card className="shadow-sm p-4 border-0 mb-4">

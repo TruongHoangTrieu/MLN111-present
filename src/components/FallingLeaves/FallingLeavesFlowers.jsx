@@ -12,7 +12,7 @@ export default function FallingLeavesFlowers() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    const newItems = Array.from({ length: 25 }).map(() => ({
+    const newItems = Array.from({ length: 15 }).map(() => ({
       x: random(0, window.innerWidth),
       y: random(-200, -50),
       size: random(20, 40),

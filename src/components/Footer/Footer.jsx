@@ -32,12 +32,13 @@ const Footer = () => {
       className={`footer text-light py-5 ${isVisible ? "show" : ""}`}
     >
       <div className="container">
-        <div className="row">
+        <div className="row text-center text-md-start">
           {/* Cột 1 */}
           <div className="col-md-4 mb-4">
+            <h6 className="fw-bold mb-3">Giới thiệu</h6>
             <p>
-              Trang web do nhóm 4 lớp SE1708 thực hiện cho
-              học phần Triết học Mác – Lênin (MLN11)
+              Trang web do <strong>nhóm 4 lớp SE1708</strong> thực hiện cho học
+              phần <strong>Triết học Mác – Lênin (MLN11)</strong>.
             </p>
             <p>
               <strong>Giảng viên hướng dẫn:</strong> Hà Thị Việt Thúy
@@ -46,31 +47,20 @@ const Footer = () => {
 
           {/* Cột 2 */}
           <div className="col-md-4 mb-4">
-            <h6 className="fw-bold">Phụ lục các mục</h6>
-            <p>
-              <strong>Trang chủ:</strong> Tổng quan và sơ lược.
-            </p>
-            <p>
-              <strong>Nội dung:</strong> Lịch sử, Vai trò trong đời sống xã hội
-              và đổi mới đất nước, Vai trò trong nhiệm vụ chuyển đổi số quốc gia.
-            </p>
-            <p>
-              <strong>Quiz:</strong> Bài trắc nghiệm củng cố kiến thức.
-            </p>
+            <h6 className="fw-bold mb-3">Liên hệ</h6>
+            <p>Email: trieuthse182579@fpt.edu.vn</p>
+            <p>Điện thoại: 096 4488 767</p>
+            <p>Địa chỉ: Lô E2a-7, Đường D1, Khu Công nghệ cao, Phường Tăng Nhơn Phú, TPHCM</p>
           </div>
 
           {/* Cột 3 */}
           <div className="col-md-4 mb-4">
-            <h6 className="fw-bold">Phụ lục AI</h6>
+            <h6 className="fw-bold mb-3">Phụ lục AI</h6>
             <p>
               Trang web này được xây dựng với sự hỗ trợ của AI để tổng hợp, cấu
               trúc nội dung và tạo mã nguồn.
             </p>
-            <p>
-              <a href="#" className="text-light text-decoration-none fw-bold">
-                Chính sách bảo mật
-              </a>
-            </p>
+            <p></p>
           </div>
         </div>
 

@@ -34,10 +34,10 @@ export default function RelatedArticles({
                 </div>
                 <div className="col-8">
                   <div className="card-body d-flex flex-column">
-                    <h5 className="card-title mb-1">{item.title}</h5>
-                    <p className="card-text text-muted small mb-2">
-                      {(item.concept || "").slice(0, 90)}...
-                    </p>
+                    <h5 className="card-title mb-1 fs-4 fw-bold">{item.title}</h5>
+<p className="card-text text-muted fs-6 fw-semibold mb-2">
+  {(item.concept || "").slice(0, 90)}...
+</p>
                     <Link
                       to={`/detaild/${item.id}`}
                       className="btn btn-sm btn-outline-primary mt-auto align-self-start"
